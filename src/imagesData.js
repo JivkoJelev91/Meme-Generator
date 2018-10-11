@@ -147,7 +147,42 @@ var arr = [{
         'id': '30',
         'name': 'picture30.jpg',
         'alt': 'picture30'
-    }
+    },
+    {
+        'id': '31',
+        'name': 'picture31.jpg',
+        'alt': 'picture31'
+    },
+    {
+        'id': '32',
+        'name': 'picture32.jpg',
+        'alt': 'picture32'
+    },
+    {
+        'id': '33',
+        'name': 'picture33.jpg',
+        'alt': 'picture33'
+    },
+    {
+        'id': '34',
+        'name': 'picture34.jpg',
+        'alt': 'picture34'
+    },
+    {
+        'id': '35',
+        'name': 'picture35.jpg',
+        'alt': 'picture35'
+    },
+    {
+        'id': '36',
+        'name': 'picture36.jpg',
+        'alt': 'picture36'
+    },
+    {
+        'id': '37',
+        'name': 'picture37.jpg',
+        'alt': 'picture37'
+    },
 ];
 
 export default arr;

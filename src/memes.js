@@ -44,7 +44,7 @@ class Memes extends Component {
         }
     }
 
-    generate = (event) => {
+    generate = () => {
         this.setState({
             active: true
         });
