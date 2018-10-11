@@ -9,7 +9,8 @@ class Memes extends Component {
           value: 'picture1.jpg',
           topText: "",
           bottomText: "",
-          fontSize: 33, 
+          topFontSize: 33, 
+          bottomFontSize: 0, 
           active : false
         };
       }
@@ -26,12 +27,13 @@ class Memes extends Component {
             [event.target.name]: event.target.value ,
             active:false
         });
+
     }
 
     handleFontSize = (event) => {
         if(event.target.value != undefined){
             this.setState({
-                fontSize: event.target.value,
+                topFontSize: event.target.value,
                 active: false
             });
         }
@@ -62,12 +64,14 @@ class Memes extends Component {
                     <div>
                         <label>Top text</label>
                         <input type="text" name="topText" onChange={this.handleInput}/>
+                        <label>Font Size Top Text</label>
+                        <input type="number" name="topFontSize" onChange={this.handleFontSize}/>
                     </div>
                     <div>
                         <label>Bottom text</label>
                         <input type="text" name="bottomText" onChange={this.handleInput}/>
-                        <label>Change Font Size</label>
-                        <input type="number" name="fontSize" onChange={this.handleFontSize}/>
+                        <label>Font Size Bottom Text</label>
+                        <input type="number" name="bottomFontSize" onChange={this.handleFontSize}/>
                     </div>
                     <div>
                         <button 
@@ -77,11 +81,11 @@ class Memes extends Component {
                     </div>
             </div>
             <div className="pictureContainer">
-                <div className="topText" style={{fontSize: this.state.fontSize + 'px'}}>
+                <div className="topText" style={{fontSize: this.state.topFontSize + 'px'}}>
                     { this.state.active ? this.state.topText:  "" }
                 </div>
                 <img src= {require(`./meme-pictures/${this.state.value}`)} className="memePictures"/>
-                <div className="bottomText" style={{fontSize: this.state.fontSize + 'px'}}>
+                <div className="bottomText">
                     { this.state.active ? this.state.bottomText : "" }
                 </div>
             </div>

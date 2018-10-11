@@ -62,11 +62,13 @@ class Memes extends Component {
                     <div>
                         <label>Top text</label>
                         <input type="text" name="topText" onChange={this.handleInput}/>
+                        <label>Font Size Top Text</label>
+                        <input type="number" name="fontSize" onChange={this.handleFontSize}/>
                     </div>
                     <div>
                         <label>Bottom text</label>
                         <input type="text" name="bottomText" onChange={this.handleInput}/>
-                        <label>Change Font Size</label>
+                        <label>Font Size Bottom Text</label>
                         <input type="number" name="fontSize" onChange={this.handleFontSize}/>
                     </div>
                     <div>
