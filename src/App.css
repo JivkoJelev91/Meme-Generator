@@ -8,9 +8,11 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 10vmin;
+  width:100px;
+  height: 100px;
   padding-top: 20px;
   padding-bottom: 50px;
+
 }
 
 .wrapper{
@@ -22,32 +24,6 @@
 header{
   font-size:60px;
   padding: 50px;
-}
-
-input[type=text] {
-  width: 100%;
-  padding: 30px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-select{
-  width: 100%;
-  padding: 15px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.form{
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px 100px;
 }
 
 button{
@@ -65,21 +41,84 @@ button:hover{
   background-color: #45a049;
 }
 
-.memePictures{
-  width:500px;
-  height:400px;
+input[type=text] {
+  padding: 30px 20px;
+}
+
+select{
+  padding: 15px 20px;
+}
+
+input[type=text], select{
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 100px;
 }
 
 .pictureContainer{
   position: relative;
+  max-width: 500px;
+  height: 400px;
+  width:100%;
+  width: 100%;
+  font-size:33px;
+}
+
+.memePictures{
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 550px) {
+  header{
+    font-size:40px;
+    padding: 15px;
+  }
+  input[type=text]{
+    padding: 15px 10px;
+  }
+  .form{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .pictureContainer{
+    height: 300px;
+    font-size:23px;
+  }
 }
 
 .topText{
-  position: absolute;
+  top:5px;
 }
 
 .bottomText{
+  margin:0 15px;
+}
+
+.topText, .bottomText{
+  color:#FFF;
   position: absolute;
-  text-align: center;
   bottom: 0;
+  left:0;
+  right:0;
+  font-size:90%;
+  text-shadow:
+  1px  1px 2px black,
+  1px -1px 2px black,
+ -1px  1px 2px black,
+ -1px -1px 2px black;
+ word-break: inherit;
+}
+
+footer{
+  padding: 20px;
 }

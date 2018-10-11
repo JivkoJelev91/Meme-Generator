@@ -33,6 +33,7 @@ class Memes extends Component {
     render() {
 
         return (
+            <div>
             <div className="wrapper">
                 <div className="form">
                     <div>
@@ -65,6 +66,8 @@ class Memes extends Component {
                     { this.state.active ? this.state.bottomText : "" }
                 </div>
             </div>
+         </div>
+         <footer>Copyright © meme-generator</footer>
          </div>
         );
       }
