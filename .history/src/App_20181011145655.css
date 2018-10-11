@@ -56,17 +56,15 @@ input[type=text],input[type=number], select{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px 30px;
-  margin:20px;
 }
 
 .pictureContainer{
   position: relative;
-  max-width: 690px;
+  max-width: 500px;
   height: 430px;
   width:100%;
   width: 100%;
   font-size:33px;
-  margin:20px;
 }
 
 .memePictures{
