@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import arr from './imagesData';
-import html2canvas from 'html2canvas';
-
 
 class Memes extends Component {
     constructor(props) {
@@ -48,19 +46,6 @@ class Memes extends Component {
         this.setState({
             active: true
         });
-
-        function downloadImage(){
-            html2canvas(document.querySelector(".pictureContainer"))
-               .then(canvas => {
-               var a = document.createElement('a'); 
-               document.body.appendChild(a); 
-               a.download = "image.png"; 
-               a.href =  canvas.toDataURL();
-               a.click();
-           });
-        }	 
-
-        downloadImage();
     }
 
     render() {
@@ -96,6 +81,7 @@ class Memes extends Component {
                         </button>
                     </div>
             </div>
+            <a href="./meme-pictures/picture1.jpg"download>
             <div className="pictureContainer">
                 <div className="topText" 
                      style={{fontSize: this.state.fontSize + 'px'}}>
@@ -107,6 +93,7 @@ class Memes extends Component {
                     { this.state.active ? this.state.bottomText : "" }
                 </div>
             </div>
+            </a>
          </div>
          <footer>Copyright © meme-generator</footer>
          </div>

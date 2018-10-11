@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import arr from './imagesData';
-import html2canvas from 'html2canvas';
-
 
 class Memes extends Component {
     constructor(props) {
@@ -48,19 +46,6 @@ class Memes extends Component {
         this.setState({
             active: true
         });
-
-        function downloadImage(){
-            html2canvas(document.querySelector(".pictureContainer"))
-               .then(canvas => {
-               var a = document.createElement('a'); 
-               document.body.appendChild(a); 
-               a.download = "image.png"; 
-               a.href =  canvas.toDataURL();
-               a.click();
-           });
-        }	 
-
-        downloadImage();
     }
 
     render() {

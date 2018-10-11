@@ -48,19 +48,26 @@ class Memes extends Component {
         this.setState({
             active: true
         });
+    }
 
-        function downloadImage(){
-            html2canvas(document.querySelector(".pictureContainer"))
-               .then(canvas => {
-               var a = document.createElement('a'); 
-               document.body.appendChild(a); 
-               a.download = "image.png"; 
-               a.href =  canvas.toDataURL();
-               a.click();
-           });
-        }	 
+    componentWillMount(){
 
-        downloadImage();
+        var pictureContainer = document.getElementsByClassName('pictureContainer')[0];
+        var memePictures = document.getElementsByClassName('memePictures')[0];
+
+
+        html2canvas(pictureContainer , {
+            onrendered: function(canvas) {
+                var theCanvas = canvas;
+                document.body.appendChild(canvas);
+
+                // Convert and download as image 
+                html2canvas.Canvas2Image.saveAsPNG(canvas); 
+                memePictures.appendChild(canvas);
+                // Clean up 
+                //document.body.removeChild(canvas);
+            }
+        });
     }
 
     render() {

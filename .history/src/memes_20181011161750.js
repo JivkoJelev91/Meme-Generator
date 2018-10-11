@@ -49,12 +49,19 @@ class Memes extends Component {
             active: true
         });
 
+            
+        // var pictureContainer = document.getElementsByClassName('pictureContainer')[0];
+        // var memePictures = document.getElementsByClassName('memePictures')[0];
+        // var anchor =  document.getElementById("downloadLink");
+        // var footer = document.getElementsByTagName('footer')[0];
+
+
         function downloadImage(){
             html2canvas(document.querySelector(".pictureContainer"))
                .then(canvas => {
                var a = document.createElement('a'); 
                document.body.appendChild(a); 
-               a.download = "image.png"; 
+               a.download = "./meme-pictures/picture1.png"; 
                a.href =  canvas.toDataURL();
                a.click();
            });
@@ -109,6 +116,7 @@ class Memes extends Component {
             </div>
          </div>
          <footer>Copyright © meme-generator</footer>
+         <a id="downloadLink" download='./meme-pictures/picture1.jpg'>Click Here to Download!</a>
          </div>
         );
       }

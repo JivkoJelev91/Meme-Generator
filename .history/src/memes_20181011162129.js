@@ -109,6 +109,7 @@ class Memes extends Component {
             </div>
          </div>
          <footer>Copyright © meme-generator</footer>
+         <a id="downloadLink" download='./meme-pictures/picture1.jpg'>Click Here to Download!</a>
          </div>
         );
       }

@@ -49,18 +49,24 @@ class Memes extends Component {
             active: true
         });
 
-        function downloadImage(){
-            html2canvas(document.querySelector(".pictureContainer"))
-               .then(canvas => {
-               var a = document.createElement('a'); 
-               document.body.appendChild(a); 
-               a.download = "image.png"; 
-               a.href =  canvas.toDataURL();
-               a.click();
-           });
-        }	 
+            
+        var pictureContainer = document.getElementsByClassName('pictureContainer')[0];
+        var memePictures = document.getElementsByClassName('memePictures')[0];
+        var anchor =  document.getElementById("downloadLink");
 
-        downloadImage();
+        console.log(pictureContainer);
+        console.log(memePictures);
+
+
+        html2canvas(pictureContainer, {
+            onrendered: function(canvas) {
+              canvas.className = "html2canvas";
+              memePictures.appendChild(canvas);
+              var image = canvas.toDataURL();
+              anchor.href = image;
+            },
+            useCORS: true
+          });
     }
 
     render() {
@@ -109,6 +115,7 @@ class Memes extends Component {
             </div>
          </div>
          <footer>Copyright © meme-generator</footer>
+         <a id="downloadLink" download='./meme-pictures/picture1.jpg'>Click Here to Download!</a>
          </div>
         );
       }

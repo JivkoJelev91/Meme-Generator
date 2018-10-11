@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import arr from './imagesData';
-import html2canvas from 'html2canvas';
-
 
 class Memes extends Component {
     constructor(props) {
@@ -48,19 +46,6 @@ class Memes extends Component {
         this.setState({
             active: true
         });
-
-        function downloadImage(){
-            html2canvas(document.querySelector(".pictureContainer"))
-               .then(canvas => {
-               var a = document.createElement('a'); 
-               document.body.appendChild(a); 
-               a.download = "image.png"; 
-               a.href =  canvas.toDataURL();
-               a.click();
-           });
-        }	 
-
-        downloadImage();
     }
 
     render() {
@@ -97,13 +82,11 @@ class Memes extends Component {
                     </div>
             </div>
             <div className="pictureContainer">
-                <div className="topText" 
-                     style={{fontSize: this.state.fontSize + 'px'}}>
+                <div className="topText" style={{fontSize: this.state.fontSize + 'px'}}>
                     { this.state.active ? this.state.topText:  "" }
                 </div>
                 <img src= {require(`./meme-pictures/${this.state.value}`)} className="memePictures"/>
-                <div className="bottomText" 
-                     style={{fontSize: this.state.fontSize + 'px'}}>
+                <div className="bottomText" style={{fontSize: this.state.fontSize + 'px'}}>
                     { this.state.active ? this.state.bottomText : "" }
                 </div>
             </div>

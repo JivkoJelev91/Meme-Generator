@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import arr from './imagesData';
-import html2canvas from 'html2canvas';
-
 
 class Memes extends Component {
     constructor(props) {
@@ -37,30 +35,18 @@ class Memes extends Component {
                 active: false
             });
         }
-        if(!event.target.value || event.target.value > 99){
-            this.setState({
-                fontSize: 33
-            })
-        }
+        console.log();
     }
 
     generate = (event) => {
         this.setState({
             active: true
         });
-
-        function downloadImage(){
-            html2canvas(document.querySelector(".pictureContainer"))
-               .then(canvas => {
-               var a = document.createElement('a'); 
-               document.body.appendChild(a); 
-               a.download = "image.png"; 
-               a.href =  canvas.toDataURL();
-               a.click();
-           });
-        }	 
-
-        downloadImage();
+        if(!event.target.value){
+            this.setState({
+                fontSize: 33
+            })
+        }
     }
 
     render() {
@@ -97,13 +83,11 @@ class Memes extends Component {
                     </div>
             </div>
             <div className="pictureContainer">
-                <div className="topText" 
-                     style={{fontSize: this.state.fontSize + 'px'}}>
+                <div className="topText" style={{fontSize: this.state.fontSize + 'px'}}>
                     { this.state.active ? this.state.topText:  "" }
                 </div>
                 <img src= {require(`./meme-pictures/${this.state.value}`)} className="memePictures"/>
-                <div className="bottomText" 
-                     style={{fontSize: this.state.fontSize + 'px'}}>
+                <div className="bottomText" style={{fontSize: this.state.fontSize + 'px'}}>
                     { this.state.active ? this.state.bottomText : "" }
                 </div>
             </div>
