@@ -51,6 +51,12 @@ class Memes extends Component {
         this.downloadImage();
     }
 
+    setImage = (event) => {
+        this.setState({
+            value: `picture${event.target.alt}.jpg`
+        })
+    }
+
     downloadImage(){
         html2canvas(document.querySelector(".pictureContainer"))
             .then(canvas => {
@@ -68,7 +74,12 @@ class Memes extends Component {
             <div className="wrapper">
                 <div className="ThumbWrapper">
                     {arr.map(res => {
-                      return  <img className="thumbn" src={require(`./meme-pictures/${res.name}`)} alt={res.id}/>
+                      return  <img 
+                                onClick={this.setImage} 
+                                // onMouseEnter={this.setImage}
+                                className="thumbn" 
+                                src={require(`./meme-pictures/${res.name}`)} 
+                                alt={res.id}/>
                     })}
                 </div>
                 <div className="form">
