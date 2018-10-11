@@ -66,6 +66,11 @@ class Memes extends Component {
         return (
             <div>
             <div className="wrapper">
+                <div className="ThumbWrapper">
+                    {arr.map(res => {
+                      return  <img className="thumbn" src={require(`./meme-pictures/${res.name}`)} alt={res.id}/>
+                    })}
+                </div>
                 <div className="form">
                     <div>
                         <select onChange={this.handleChange}>

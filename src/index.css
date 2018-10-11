@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.ThumbWrapper{
+  width: 75%;
+}
+.thumbn{
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+}
