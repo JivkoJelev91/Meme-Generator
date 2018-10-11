@@ -46,10 +46,14 @@ class Memes extends Component {
 
     generate = () => {
         this.setState({
-            active: true
+            active: true,
+            topText: "",
+            bottomText: "",
         });
         this.downloadImage();
     }
+    setImage = (event) => { 
+        this.setState({ value: `picture${event.target.alt}.jpg` }) }
 
     downloadImage(){
         html2canvas(document.querySelector(".pictureContainer"))
@@ -57,7 +61,7 @@ class Memes extends Component {
             var a = document.createElement('a'); 
             document.body.appendChild(a); 
             a.download = "image.png"; 
-            a.href =  canvas.toDataURL();
+            a.href =  canvas.toDataURL()
             a.click();
         });
     }
@@ -68,7 +72,7 @@ class Memes extends Component {
             <div className="wrapper">
                 <div className="ThumbWrapper">
                     {arr.map(res => {
-                      return  <img className="thumbn" src={require(`./meme-pictures/${res.name}`)} alt={res.id}/>
+                      return  <img onClick={this.setImage} className="thumbn" key={res.id} src={require(`./meme-pictures/${res.name}`)} alt={res.id}/>
                     })}
                 </div>
                 <div className="form">
@@ -85,13 +89,13 @@ class Memes extends Component {
                     </div>
                     <div>
                         <label>Top text</label>
-                        <input type="text" name="topText" onChange={this.handleInput}/>
+                        <input type="text" name="topText" value={this.state.topText} onChange={this.handleInput}/>
                     </div>
                     <div>
                         <label>Bottom text</label>
-                        <input type="text" name="bottomText" onChange={this.handleInput}/>
+                        <input type="text" name="bottomText" value={this.state.bottomText} onChange={this.handleInput}/>
                         <label>Change Font Size</label>
-                        <input type="number" name="fontSize" onChange={this.handleFontSize}/>
+                        <input type="number" value={this.state.fontSize} name="fontSize" onChange={this.handleFontSize}/>
                     </div>
                     <div>
                         <button 
@@ -103,12 +107,12 @@ class Memes extends Component {
             <div className="pictureContainer">
                 <div className="topText" 
                      style={{fontSize: this.state.fontSize + 'px'}}>
-                    { this.state.active ? this.state.topText:  "" }
+                    {this.state.topText}
                 </div>
                 <img src= {require(`./meme-pictures/${this.state.value}`)} className="memePictures"/>
                 <div className="bottomText" 
                      style={{fontSize: this.state.fontSize + 'px'}}>
-                    { this.state.active ? this.state.bottomText : "" }
+                    {this.state.bottomText}
                 </div>
             </div>
          </div>
