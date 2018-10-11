@@ -31,7 +31,7 @@ class Memes extends Component {
     }
 
     handleFontSize = (event) => {
-        if(event.target.value != undefined){
+        if(event.target.value !== undefined){
             this.setState({
                 fontSize: event.target.value,
                 active: false
