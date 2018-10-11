@@ -31,6 +31,13 @@ class Memes extends Component {
         });
     }
 
+    handleKeyPress = (event) => {
+        if (event.keyCode === 13) {
+            console.log('dsads');
+        }
+    }
+
+
     render() {
         return (
             <div>
@@ -57,7 +64,9 @@ class Memes extends Component {
                     </div>
                     <div>
                         <button 
-                            onClick={this.generate}>
+                            onClick={this.generate}
+                            onKeyPress={this.handleKeyPress} 
+                            type="button">
                             GENERATE MEME
                         </button>
                     </div>

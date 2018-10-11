@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import arr from './imagesData';
 
 class Memes extends Component {
     constructor(props) {
@@ -32,19 +31,18 @@ class Memes extends Component {
     }
 
     render() {
+
         return (
             <div>
             <div className="wrapper">
                 <div className="form">
                     <div>
                         <select onChange={this.handleChange}>
-                            {
-                            arr.map(img => {
-                                return <option key={img.id} value={img.name}>
-                                            Image{img.id}
-                                       </option>
-                            })
-                            }
+                            <option value="picture1.jpg">picture1</option>
+                            <option value="picture2.jpg">picture2</option>
+                            <option value="picture3.jpg">picture3</option>
+                            <option value="picture4.jpg">picture4</option>
+                            <option value="picture5.jpg">picture5</option>
                         </select>
                     </div>
                     <div>
@@ -56,10 +54,7 @@ class Memes extends Component {
                         <input type="text" name="bottomText" onChange={this.handleInput}/>
                     </div>
                     <div>
-                        <button 
-                            onClick={this.generate}>
-                            GENERATE MEME
-                        </button>
+                        <button onClick={this.generate}>GENERATE MEME</button>
                     </div>
             </div>
             <div className="pictureContainer">

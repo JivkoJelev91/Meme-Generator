@@ -31,6 +31,13 @@ class Memes extends Component {
         });
     }
 
+    handleKeyPress = (event) => {
+        if (event.keyCode === 13) {
+            console.log('dsads');
+        }
+    }
+
+
     render() {
         return (
             <div>

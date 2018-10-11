@@ -31,6 +31,13 @@ class Memes extends Component {
         });
     }
 
+    handleKeyPress = (e) => {
+        if(e.charCode==13){
+            alert('Enter clicked!!!');    
+        }
+    }
+
+
     render() {
         return (
             <div>
@@ -57,7 +64,8 @@ class Memes extends Component {
                     </div>
                     <div>
                         <button 
-                            onClick={this.generate}>
+                            onClick={this.generate}
+                            onKeyPress={this.handleKeyPress} >
                             GENERATE MEME
                         </button>
                     </div>

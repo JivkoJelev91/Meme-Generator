@@ -31,6 +31,11 @@ class Memes extends Component {
         });
     }
 
+    handleKeyPress = () => {
+        alert('ddd')
+    }
+
+
     render() {
         return (
             <div>
@@ -57,7 +62,8 @@ class Memes extends Component {
                     </div>
                     <div>
                         <button 
-                            onClick={this.generate}>
+                            onClick={this.generate}
+                            onKeyPress={this.handleKeyPress} >
                             GENERATE MEME
                         </button>
                     </div>

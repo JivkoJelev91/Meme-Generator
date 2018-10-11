@@ -32,6 +32,9 @@ class Memes extends Component {
     }
 
     render() {
+
+        console.log(arr);
+
         return (
             <div>
             <div className="wrapper">
@@ -40,7 +43,8 @@ class Memes extends Component {
                         <select onChange={this.handleChange}>
                             {
                             arr.map(img => {
-                                return <option key={img.id} value={img.name}>
+                                return 
+                                       <option key={img.id} value={img.name}>
                                             Image{img.id}
                                        </option>
                             })
@@ -56,10 +60,7 @@ class Memes extends Component {
                         <input type="text" name="bottomText" onChange={this.handleInput}/>
                     </div>
                     <div>
-                        <button 
-                            onClick={this.generate}>
-                            GENERATE MEME
-                        </button>
+                        <button onClick={this.generate}>GENERATE MEME</button>
                     </div>
             </div>
             <div className="pictureContainer">

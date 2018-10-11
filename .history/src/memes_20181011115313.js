@@ -32,18 +32,20 @@ class Memes extends Component {
     }
 
     render() {
+
+        console.log(arr);
+
         return (
             <div>
             <div className="wrapper">
                 <div className="form">
                     <div>
                         <select onChange={this.handleChange}>
+                            <option value="picture1.jpg">picture1</option>
                             {
-                            arr.map(img => {
-                                return <option key={img.id} value={img.name}>
-                                            Image{img.id}
-                                       </option>
-                            })
+                                arr.map(img => {
+                                    return <option value={img.name}>picture1</option>
+                                })
                             }
                         </select>
                     </div>
@@ -56,10 +58,7 @@ class Memes extends Component {
                         <input type="text" name="bottomText" onChange={this.handleInput}/>
                     </div>
                     <div>
-                        <button 
-                            onClick={this.generate}>
-                            GENERATE MEME
-                        </button>
+                        <button onClick={this.generate}>GENERATE MEME</button>
                     </div>
             </div>
             <div className="pictureContainer">
