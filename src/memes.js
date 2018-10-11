@@ -44,13 +44,14 @@ class Memes extends Component {
         }
     }
 
-    generate = () => {
-        this.setState({
+    generate = async () => {
+        await this.downloadImage();
+        await this.setState({
             active: true,
             topText: "",
-            bottomText: "",
+            bottomText: ""
         });
-        this.downloadImage();
+        
     }
     setImage = (event) => { 
         this.setState({ value: `picture${event.target.alt}.jpg` }) }
