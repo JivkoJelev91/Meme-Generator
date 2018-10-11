@@ -1,9 +1,9 @@
 {
-  "main.css": "/Meme-Generator/static/css/main.7a9e47a1.chunk.css",
-  "main.js": "/Meme-Generator/static/js/main.b630522d.chunk.js",
-  "main.js.map": "/Meme-Generator/static/js/main.b630522d.chunk.js.map",
-  "static/js/1.3158845a.chunk.js": "/Meme-Generator/static/js/1.3158845a.chunk.js",
-  "static/js/1.3158845a.chunk.js.map": "/Meme-Generator/static/js/1.3158845a.chunk.js.map",
+  "main.css": "/Meme-Generator/static/css/main.e9d68c50.chunk.css",
+  "main.js": "/Meme-Generator/static/js/main.01daab84.chunk.js",
+  "main.js.map": "/Meme-Generator/static/js/main.01daab84.chunk.js.map",
+  "static/js/1.a884fde9.chunk.js": "/Meme-Generator/static/js/1.a884fde9.chunk.js",
+  "static/js/1.a884fde9.chunk.js.map": "/Meme-Generator/static/js/1.a884fde9.chunk.js.map",
   "runtime~main.js": "/Meme-Generator/static/js/runtime~main.1745a519.js",
   "runtime~main.js.map": "/Meme-Generator/static/js/runtime~main.1745a519.js.map",
   "static/media/picture33.jpg": "/Meme-Generator/static/media/picture33.1ce80e6d.jpg",
@@ -35,8 +35,8 @@
   "static/media/picture7.jpg": "/Meme-Generator/static/media/picture7.169dd1bc.jpg",
   "static/media/picture8.jpg": "/Meme-Generator/static/media/picture8.e4aaf770.jpg",
   "static/media/picture9.jpg": "/Meme-Generator/static/media/picture9.4486ced2.jpg",
-  "static/css/main.7a9e47a1.chunk.css.map": "/Meme-Generator/static/css/main.7a9e47a1.chunk.css.map",
+  "static/css/main.e9d68c50.chunk.css.map": "/Meme-Generator/static/css/main.e9d68c50.chunk.css.map",
   "index.html": "/Meme-Generator/index.html",
-  "precache-manifest.7f3863439a6a9307e341737c5a95d924.js": "/Meme-Generator/precache-manifest.7f3863439a6a9307e341737c5a95d924.js",
+  "precache-manifest.393b065fd7b989a09bbf2f19b7509567.js": "/Meme-Generator/precache-manifest.393b065fd7b989a09bbf2f19b7509567.js",
   "service-worker.js": "/Meme-Generator/service-worker.js"
 }
