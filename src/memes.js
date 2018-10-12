@@ -116,9 +116,7 @@ class Memes extends Component {
                         <label>Change Font Size</label>
                         <input type="number" value={this.state.fontSize} name="fontSize" onChange={this.handleFontSize}/>
                         <div className="colorPicker">
-                            <div>
-                            Pick color
-                            </div>
+                            <div>Pick color</div>
                             <ColorPicker
                             color={'#36c'}
                             alpha={30}
