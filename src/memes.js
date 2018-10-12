@@ -4,6 +4,7 @@ import arr from './imagesData';
 import html2canvas from 'html2canvas';
 import Gallery from './gallery';
 import ColorPicker from 'rc-color-picker';
+import TextPicture from './textOnPicture';
 import 'rc-color-picker/assets/index.css';
 
 
@@ -135,17 +136,12 @@ class Memes extends Component {
                         </button>
                     </div>
             </div>
-            <div className="pictureContainer">
-                <div className="topText" 
-                     style={{fontSize: this.state.fontSize + 'px',  "color": this.state.color}}>
-                    {this.state.topText}
-                </div>
-                <img src={require(`./meme-pictures/${this.state.value}`)} className="memePictures"/>
-                <div className="bottomText" 
-                     style={{fontSize: this.state.fontSize + 'px', "color": this.state.color}}>
-                    {this.state.bottomText}
-                </div>
-            </div>
+            <TextPicture 
+                fontSize={this.state.fontSize}
+                color={this.state.color}
+                topText={this.state.topText}
+                bottomText={this.state.bottomText}
+                value={this.state.value} />
          </div>
          <footer>Copyright © meme-generator</footer>
          </div>
