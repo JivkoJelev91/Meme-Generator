@@ -54,8 +54,11 @@ class Memes extends Component {
         await this.setState({
             active: true,
             topText: "",
-            bottomText: ""
+            bottomText: "",
+            color: 'white'
         });
+
+
     }
 
     setImage = (event) => {
@@ -112,16 +115,20 @@ class Memes extends Component {
                         <input type="text" name="bottomText" value={this.state.bottomText} onChange={this.handleInput}/>
                         <label>Change Font Size</label>
                         <input type="number" value={this.state.fontSize} name="fontSize" onChange={this.handleFontSize}/>
-                        Pick color<ColorPicker
-                        color={'#36c'}
-                        alpha={30}
-                        onChange={this.changeHandler}
-                        onClose={this.closeHandler}
-                        placement="topLeft"
-                        className="some-class"
-                        >
-                        <span className="rc-color-picker-trigger" />
-                        </ColorPicker>
+                        <div className="colorPicker">
+                            <div>
+                            Pick color
+                            </div>
+                            <ColorPicker
+                            color={'#36c'}
+                            alpha={30}
+                            onChange={this.changeHandler}
+                            onClose={this.closeHandler}
+                            placement="topLeft"
+                            className="some-class">
+                                <div className="rc-color-picker-trigger"></div>
+                            </ColorPicker>
+                        </div>
                     </div>
                     <div>
                         <button 

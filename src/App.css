@@ -141,6 +141,17 @@ code {
   height: 100px;
 }
 
+.colorPicker{
+  display:flex;
+  justify-content: center;
+}
+
+.colorPicker div{
+  align-self: center;
+  padding: 5px;
+  font-size:20px;
+}
+
 footer{
   padding: 20px;
 }
