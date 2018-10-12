@@ -53,8 +53,6 @@ class Memes extends Component {
         });
         
     }
-    setImage = (event) => { 
-        this.setState({ value: `picture${event.target.alt}.jpg` }) }
 
     setImage = (event) => {
         this.setState({
