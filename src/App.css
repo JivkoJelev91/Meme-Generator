@@ -41,7 +41,6 @@ button:hover{
   background-color: #45a049;
 }
 
-
 input[type=text],input[type=number], select{
   width: 100%;
   padding: 20px;
@@ -67,6 +66,10 @@ input[type=text],input[type=number], select{
   width: 100%;
   font-size:33px;
   margin:20px;
+}
+
+.ThumbWrapper img {
+  cursor: pointer;
 }
 
 .memePictures{

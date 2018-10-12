@@ -52,7 +52,6 @@ class Memes extends Component {
             topText: "",
             bottomText: ""
         });
-        
     }
 
     setImage = (event) => {
