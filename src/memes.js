@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import arr from './imagesData';
 import html2canvas from 'html2canvas';
+import Gallery from './gallery';
 
 
 class Memes extends Component {
@@ -75,11 +76,7 @@ class Memes extends Component {
         return (
             <div>
             <div className="wrapper">
-                <div className="ThumbWrapper">
-                    {arr.map(res => {
-                      return  <img onClick={this.setImage} className="thumbn" key={res.id} src={require(`./meme-pictures/${res.name}`)} alt={res.id}/>
-                    })}
-                </div>
+                <Gallery setImage={this.setImage}/>
                 <div className="form">
                     <div>
                         <select onChange={this.handleChange}>
