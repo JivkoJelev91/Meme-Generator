@@ -119,12 +119,12 @@ class Memes extends Component {
                         <div className="colorPicker">
                             <div>Pick color</div>
                             <ColorPicker
-                            color={'#36c'}
-                            alpha={30}
-                            onChange={this.changeHandler}
-                            onClose={this.closeHandler}
-                            placement="topLeft"
-                            className="some-class">
+                                color={'#36c'}
+                                alpha={30}
+                                onChange={this.changeHandler}
+                                onClose={this.closeHandler}
+                                placement="topLeft"
+                                className="some-class">
                                 <div className="rc-color-picker-trigger"></div>
                             </ColorPicker>
                         </div>
