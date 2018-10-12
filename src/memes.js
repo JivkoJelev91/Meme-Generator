@@ -3,6 +3,8 @@ import './App.css';
 import arr from './imagesData';
 import html2canvas from 'html2canvas';
 import Gallery from './gallery';
+import ColorPicker from 'rc-color-picker';
+import 'rc-color-picker/assets/index.css';
 
 
 class Memes extends Component {
@@ -15,6 +17,7 @@ class Memes extends Component {
           fontSize: 33, 
           pages: 10,
           active : false,
+          color:"white"
         };
       }
 
@@ -71,6 +74,15 @@ class Memes extends Component {
             a.click();
         });
     }
+    changeHandler = (colors) => {
+        this.setState({
+            color:colors.color
+        })
+      }
+      
+     closeHandler = (colors) => {
+        console.log(colors);
+      }
 
     render() {
         return (
@@ -100,6 +112,16 @@ class Memes extends Component {
                         <input type="text" name="bottomText" value={this.state.bottomText} onChange={this.handleInput}/>
                         <label>Change Font Size</label>
                         <input type="number" value={this.state.fontSize} name="fontSize" onChange={this.handleFontSize}/>
+                        Pick color<ColorPicker
+                        color={'#36c'}
+                        alpha={30}
+                        onChange={this.changeHandler}
+                        onClose={this.closeHandler}
+                        placement="topLeft"
+                        className="some-class"
+                        >
+                        <span className="rc-color-picker-trigger" />
+                        </ColorPicker>
                     </div>
                     <div>
                         <button 
@@ -110,12 +132,12 @@ class Memes extends Component {
             </div>
             <div className="pictureContainer">
                 <div className="topText" 
-                     style={{fontSize: this.state.fontSize + 'px'}}>
+                     style={{fontSize: this.state.fontSize + 'px',  "color": this.state.color}}>
                     {this.state.topText}
                 </div>
-                <img src= {require(`./meme-pictures/${this.state.value}`)} className="memePictures"/>
+                <img src={require(`./meme-pictures/${this.state.value}`)} className="memePictures"/>
                 <div className="bottomText" 
-                     style={{fontSize: this.state.fontSize + 'px'}}>
+                     style={{fontSize: this.state.fontSize + 'px', "color": this.state.color}}>
                     {this.state.bottomText}
                 </div>
             </div>

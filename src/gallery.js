@@ -15,12 +15,12 @@ class Gallery extends Component {
       loadMore = () => {
           let sumPages = this.state.pages + this.props.pages;
           let substractPages = this.state.pages - this.props.pages;
-          if(this.state.buttonText == 'LOAD MORE MEME'){
+          if(this.state.buttonText === 'LOAD MORE MEME'){
             this.setState({
                 pages: sumPages 
             });
           }
-          if(this.state.buttonText == 'HIDE MEME'){
+          if(this.state.buttonText === 'HIDE MEME'){
             if(substractPages <= this.props.pages){
                 this.setState({
                     buttonText: 'LOAD MORE MEME' 
