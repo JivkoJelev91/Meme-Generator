@@ -13,7 +13,8 @@ class Memes extends Component {
           topText: "",
           bottomText: "",
           fontSize: 33, 
-          active : false
+          pages: 10,
+          active : false,
         };
       }
 
@@ -75,7 +76,9 @@ class Memes extends Component {
         return (
             <div>
             <div className="wrapper">
-                <Gallery setImage={this.setImage}/>
+                <Gallery 
+                    setImage={this.setImage}
+                    pages={this.state.pages}/>
                 <div className="form">
                     <div>
                         <select onChange={this.handleChange}>
@@ -101,7 +104,7 @@ class Memes extends Component {
                     <div>
                         <button 
                             onClick={this.generate}>
-                            GENERATE MEME
+                            DOWNLOAD
                         </button>
                     </div>
             </div>
