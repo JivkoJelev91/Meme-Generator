@@ -85,7 +85,7 @@ class Memes extends Component {
       }
       
      closeHandler = (colors) => {
-        console.log(colors);
+        return colors;
       }
 
     render() {
