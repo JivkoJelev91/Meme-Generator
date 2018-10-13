@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import arr from './imagesData';
-
 
 class TextPicture extends Component {
-    constructor(props) {
-        super(props);
-      }
-
-      render() {
+    render() {
         return (
             <div className="pictureContainer">
                 <div className="topText" 
@@ -25,7 +19,7 @@ class TextPicture extends Component {
                 </div>
             </div>
         );
-      }
+    }
 }
 
 export default TextPicture;

@@ -16,7 +16,7 @@ class Memes extends Component {
           topText: "",
           bottomText: "",
           fontSize: 33, 
-          pages: 10,
+          pages: 15,
           active : false,
           color:"white"
         };
@@ -46,7 +46,7 @@ class Memes extends Component {
         if(!event.target.value || event.target.value > 99){
             this.setState({
                 fontSize: 33
-            })
+            });
         }
     }
 
@@ -58,14 +58,12 @@ class Memes extends Component {
             bottomText: "",
             color: 'white'
         });
-
-
     }
 
     setImage = (event) => {
         this.setState({
             value: `picture${event.target.alt}.jpg`
-        })
+        });
     }
 
     downloadImage(){
@@ -81,12 +79,12 @@ class Memes extends Component {
     changeHandler = (colors) => {
         this.setState({
             color:colors.color
-        })
-      }
+        });
+    }
       
-     closeHandler = (colors) => {
+    closeHandler = (colors) => {
         return colors;
-      }
+    }
 
     render() {
         return (
@@ -150,4 +148,3 @@ class Memes extends Component {
 }
 
 export default Memes;
-

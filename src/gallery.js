@@ -15,6 +15,12 @@ class Gallery extends Component {
       loadMore = () => {
           let sumPages = this.state.pages + this.props.pages;
           let substractPages = this.state.pages - this.props.pages;
+          if(sumPages >= arr.length){
+              this.setState({
+                buttonText: "HIDE MEME",
+                pages: substractPages 
+              });
+          }
           if(this.state.buttonText === 'LOAD MORE MEME'){
             this.setState({
                 pages: sumPages 
@@ -30,9 +36,6 @@ class Gallery extends Component {
                 pages: substractPages 
             });
           }
-          if(sumPages >= arr.length){
-              this.state.buttonText = 'HIDE MEME'
-          }
       }
 
       render() {
@@ -40,7 +43,6 @@ class Gallery extends Component {
                 <div className="ThumbWrapper">
                     {
                         arr.map((res, index) => {
-
                             if(index < this.state.pages){
                                 return <img 
                                 onClick={this.props.setImage} 
@@ -52,18 +54,15 @@ class Gallery extends Component {
                         })
                     }
                     <div>
-
                         <button 
                             style={{width:'200px'}}
                             onClick={this.loadMore}>
                             {this.state.buttonText}
                         </button>
                     </div>
-
                 </div>
         )
     }
-
 }
 
 export default Gallery;
