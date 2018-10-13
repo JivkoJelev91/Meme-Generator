@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
-import arr from './imagesData';
 import html2canvas from 'html2canvas';
 import Gallery from './gallery';
 import ColorPicker from 'rc-color-picker';
 import TextPicture from './textOnPicture';
+import SelectImage from './selectImages';
 import 'rc-color-picker/assets/index.css';
-
+import './App.css';
 
 class Memes extends Component {
     constructor(props) {
@@ -31,7 +30,7 @@ class Memes extends Component {
 
     handleInput = (event) => {
         this.setState({ 
-            [event.target.name]: event.target.value ,
+            [event.target.name]: event.target.value,
             active:false
         });
     }
@@ -95,15 +94,7 @@ class Memes extends Component {
                     pages={this.state.pages}/>
                 <div className="form">
                     <div>
-                        <select onChange={this.handleChange}>
-                            {
-                            arr.map(img => {
-                                return <option key={img.id} value={img.name}>
-                                            Image{img.id}
-                                       </option>
-                            }) 
-                            }
-                        </select>
+                        <SelectImage handleChange={this.handleChange}/>
                     </div>
                     <div>
                         <label>Top text</label>
@@ -123,13 +114,12 @@ class Memes extends Component {
                                 onClose={this.closeHandler}
                                 placement="topLeft"
                                 className="some-class">
-                                <div className="rc-color-picker-trigger"></div>
+                            <div className="rc-color-picker-trigger"></div>
                             </ColorPicker>
                         </div>
                     </div>
                     <div>
-                        <button 
-                            onClick={this.generate}>
+                        <button onClick={this.generate}>
                             DOWNLOAD
                         </button>
                     </div>

@@ -11,10 +11,14 @@ class Gallery extends Component {
             buttonText: 'LOAD MORE MEME',
         }
       }
+      sumAndSubstract(){
+        let sumPages = this.state.pages + this.props.pages;
+        let substractPages = this.state.pages - this.props.pages;
+        return [sumPages, substractPages];
+      }
 
       loadMore = () => {
-          let sumPages = this.state.pages + this.props.pages;
-          let substractPages = this.state.pages - this.props.pages;
+          let [sumPages, substractPages] = this.sumAndSubstract();
           if(sumPages >= arr.length){
               this.setState({
                 buttonText: "HIDE MEME",
