@@ -16,7 +16,6 @@ class Memes extends Component {
           bottomText: "",
           fontSize: 33, 
           pages: 15,
-          pagesForMobile: 6,
           active : false,
           color:"white"
         };
