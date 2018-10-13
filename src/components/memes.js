@@ -21,6 +21,15 @@ class Memes extends Component {
         };
       }
 
+    componentDidMount = () => {
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            this.setState({
+                fontSize: 23,
+                pages: 6
+            });
+        }
+    }
+    
     handleChange = (event) => {
         this.setState({ 
             value: event.target.value,
