@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import html2canvas from 'html2canvas';
-import Gallery from './gallery';
+import Gallery from '../components/gallery';
 import ColorPicker from 'rc-color-picker';
-import TextPicture from './textOnPicture';
-import SelectImage from './selectImages';
+import TextPicture from '../components/textOnPicture';
+import SelectImage from '../components/selectImages';
+import {downloadImg} from './downloadImg';
 import 'rc-color-picker/assets/index.css';
-import './App.css';
+import '../App.css';
 
 class Memes extends Component {
     constructor(props) {
@@ -50,7 +50,7 @@ class Memes extends Component {
     }
 
     generate = async () => {
-        await this.downloadImage();
+        await downloadImg();
         await this.setState({
             active: true,
             topText: "",
@@ -65,16 +65,6 @@ class Memes extends Component {
         });
     }
 
-    downloadImage(){
-        html2canvas(document.querySelector(".pictureContainer"))
-            .then(canvas => {
-            var a = document.createElement('a'); 
-            document.body.appendChild(a); 
-            a.download = "image.png"; 
-            a.href =  canvas.toDataURL()
-            a.click();
-        });
-    }
     changeHandler = (colors) => {
         this.setState({
             color:colors.color

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import arr from './imagesData';
-
+import arr from '../imagesData';
+import '../App.css';
 
 class Gallery extends Component {
     constructor(props) {
@@ -52,7 +51,7 @@ class Gallery extends Component {
                                 onClick={this.props.setImage} 
                                 className="thumbn" 
                                 key={res.id} 
-                                src={require(`./meme-pictures/${res.name}`)} 
+                                src={require(`../meme-pictures/${res.name}`)} 
                                 alt={res.id}/>
                             }
                         })

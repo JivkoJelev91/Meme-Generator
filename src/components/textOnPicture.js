@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 
 class TextPicture extends Component {
     render() {
@@ -10,7 +10,7 @@ class TextPicture extends Component {
                              "color": this.props.color}}>
                     {this.props.topText}
                 </div>
-                <img src={require(`./meme-pictures/${this.props.value}`)} 
+                <img src={require(`../meme-pictures/${this.props.value}`)} 
                      className="memePictures"/>
                 <div className="bottomText" 
                      style={{fontSize: this.props.fontSize + 'px', 
