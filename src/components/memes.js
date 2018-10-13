@@ -16,17 +16,17 @@ class Memes extends Component {
           bottomText: "",
           fontSize: 33, 
           pages: 15,
+          pagesForMobile: 6,
           active : false,
           color:"white"
         };
       }
 
-    componentDidMount = () => {
-        if (/Mobi|Android/i.test(navigator.userAgent)) {
-            this.setState({
-                fontSize: 23,
-                pages: 6
-            });
+    componentDidMount() {
+        if(window.innerWidth < 768){
+            this.setState(prevState => ({  
+                fontSize: prevState.fontSize - 10,
+            }));
         }
     }
     
