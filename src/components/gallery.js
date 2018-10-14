@@ -71,7 +71,6 @@ class Gallery extends Component {
 
 Gallery.propTypes = {
     pages: PropTypes.number,
-    buttonText: PropTypes.string
 };
 
 export default Gallery;
