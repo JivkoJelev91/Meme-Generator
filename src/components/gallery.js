@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import arr from '../imagesData';
 import '../App.css';
 
@@ -67,5 +68,10 @@ class Gallery extends Component {
         )
     }
 }
+
+Gallery.propTypes = {
+    pages: PropTypes.number,
+    buttonText: PropTypes.string
+};
 
 export default Gallery;

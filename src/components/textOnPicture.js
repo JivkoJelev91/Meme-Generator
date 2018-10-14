@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../App.css';
 
 class TextPicture extends Component {
@@ -21,5 +22,9 @@ class TextPicture extends Component {
         );
     }
 }
+
+TextPicture.propTypes = {
+    fontSize: PropTypes.number,
+};
 
 export default TextPicture;
