@@ -5,7 +5,7 @@ import TextPicture from '../components/textOnPicture';
 import SelectImage from '../components/selectImages';
 import {downloadImg} from './downloadImg';
 import 'rc-color-picker/assets/index.css';
-import '../App.css';
+import '../styles/App.css';
 
 class Memes extends Component {
     constructor(props) {

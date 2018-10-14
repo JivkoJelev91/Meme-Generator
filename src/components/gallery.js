@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import arr from '../imagesData';
-import '../App.css';
+import arr from '../resources/imagesData';
+import '../styles/App.css';
 
 class Gallery extends Component {
     constructor(props) {

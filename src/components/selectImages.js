@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import arr from '../imagesData';
-import '../App.css';
+import arr from '../resources/imagesData';
+import '../styles/App.css';
 
 class SelectImage extends Component {
     render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Memes from './components/memes'
-import Header from './components/header'
-import './App.css';
+import Memes from './memes'
+import Header from './header'
+import '../styles/App.css';
 
 class App extends Component {
   render() {
