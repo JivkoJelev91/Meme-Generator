@@ -1,292 +1,313 @@
-var arr = [{
-        'id': '1',
-        'name': 'picture1.jpg',
-        'alt': 'picture1'
+var arr = [
+{
+        'original': require('../meme-pictures/picture1.jpg'),
+        'thumbnail': require('../meme-pictures/picture1.jpg'),
+        'alt': 'picture1',
     },
-    {
-        'id': '2',
-        'name': 'picture2.jpg',
-        'alt': 'picture2'
+{
+        'original': require('../meme-pictures/picture2.jpg'),
+        'thumbnail': require('../meme-pictures/picture2.jpg'),
+        'alt': 'picture2',
     },
-    {
-        'id': '3',
-        'name': 'picture3.jpg',
-        'alt': 'picture3'
+{
+        'original': require('../meme-pictures/picture3.jpg'),
+        'thumbnail': require('../meme-pictures/picture3.jpg'),
+        'alt': 'picture3',
     },
-    {
-        'id': '4',
-        'name': 'picture4.jpg',
-        'alt': 'picture4'
+{
+        'original': require('../meme-pictures/picture4.jpg'),
+        'thumbnail': require('../meme-pictures/picture4.jpg'),
+        'alt': 'picture4',
     },
-    {
-        'id': '5',
-        'name': 'picture5.jpg',
-        'alt': 'picture5'
+{
+        'original': require('../meme-pictures/picture5.jpg'),
+        'thumbnail': require('../meme-pictures/picture5.jpg'),
+        'alt': 'picture5',
     },
-    {
-        'id': '6',
-        'name': 'picture6.jpg',
-        'alt': 'picture6'
+{
+        'original': require('../meme-pictures/picture6.jpg'),
+        'thumbnail': require('../meme-pictures/picture6.jpg'),
+        'alt': 'picture6',
     },
-    {
-        'id': '7',
-        'name': 'picture7.jpg',
-        'alt': 'picture7'
+{
+        'original': require('../meme-pictures/picture7.jpg'),
+        'thumbnail': require('../meme-pictures/picture7.jpg'),
+        'alt': 'picture7',
     },
-    {
-        'id': '8',
-        'name': 'picture8.jpg',
-        'alt': 'picture8'
+{
+        'original': require('../meme-pictures/picture8.jpg'),
+        'thumbnail': require('../meme-pictures/picture8.jpg'),
+        'alt': 'picture8',
     },
-    {
-        'id': '9',
-        'name': 'picture9.jpg',
-        'alt': 'picture9'
+{
+        'original': require('../meme-pictures/picture9.jpg'),
+        'thumbnail': require('../meme-pictures/picture9.jpg'),
+        'alt': 'picture9',
     },
-    {
-        'id': '10',
-        'name': 'picture10.jpg',
-        'alt': 'picture10'
+{
+        'original': require('../meme-pictures/picture10.jpg'),
+        'thumbnail': require('../meme-pictures/picture10.jpg'),
+        'alt': 'picture10',
     },
-    {
-        'id': '11',
-        'name': 'picture11.jpg',
-        'alt': 'picture11'
+{
+        'original': require('../meme-pictures/picture11.jpg'),
+        'thumbnail': require('../meme-pictures/picture11.jpg'),
+        'alt': 'picture11',
     },
-    {
-        'id': '12',
-        'name': 'picture12.jpg',
-        'alt': 'picture12'
+{
+        'original': require('../meme-pictures/picture12.jpg'),
+        'thumbnail': require('../meme-pictures/picture12.jpg'),
+        'alt': 'picture12',
     },
-    {
-        'id': '13',
-        'name': 'picture13.jpg',
-        'alt': 'picture13'
+{
+        'original': require('../meme-pictures/picture13.jpg'),
+        'thumbnail': require('../meme-pictures/picture13.jpg'),
+        'alt': 'picture13',
     },
-    {
-        'id': '14',
-        'name': 'picture14.jpg',
-        'alt': 'picture14'
+{
+        'original': require('../meme-pictures/picture14.jpg'),
+        'thumbnail': require('../meme-pictures/picture14.jpg'),
+        'alt': 'picture14',
     },
-    {
-        'id': '15',
-        'name': 'picture15.jpg',
-        'alt': 'picture15'
+{
+        'original': require('../meme-pictures/picture15.jpg'),
+        'thumbnail': require('../meme-pictures/picture15.jpg'),
+        'alt': 'picture15',
     },
-    {
-        'id': '16',
-        'name': 'picture16.jpg',
-        'alt': 'picture16'
+{
+        'original': require('../meme-pictures/picture16.jpg'),
+        'thumbnail': require('../meme-pictures/picture16.jpg'),
+        'alt': 'picture16',
     },
-    {
-        'id': '17',
-        'name': 'picture17.jpg',
-        'alt': 'picture17'
+{
+        'original': require('../meme-pictures/picture17.jpg'),
+        'thumbnail': require('../meme-pictures/picture17.jpg'),
+        'alt': 'picture17',
     },
-    {
-        'id': '18',
-        'name': 'picture18.jpg',
-        'alt': 'picture18'
+{
+        'original': require('../meme-pictures/picture18.jpg'),
+        'thumbnail': require('../meme-pictures/picture18.jpg'),
+        'alt': 'picture18',
     },
-    {
-        'id': '19',
-        'name': 'picture19.jpg',
-        'alt': 'picture19'
+{
+        'original': require('../meme-pictures/picture19.jpg'),
+        'thumbnail': require('../meme-pictures/picture19.jpg'),
+        'alt': 'picture19',
     },
-    {
-        'id': '20',
-        'name': 'picture20.jpg',
-        'alt': 'picture20'
+{
+        'original': require('../meme-pictures/picture20.jpg'),
+        'thumbnail': require('../meme-pictures/picture20.jpg'),
+        'alt': 'picture20',
     },
-    {
-        'id': '21',
-        'name': 'picture21.jpg',
-        'alt': 'picture21'
+{
+        'original': require('../meme-pictures/picture21.jpg'),
+        'thumbnail': require('../meme-pictures/picture21.jpg'),
+        'alt': 'picture21',
     },
-    {
-        'id': '22',
-        'name': 'picture22.jpg',
-        'alt': 'picture22'
+{
+        'original': require('../meme-pictures/picture22.jpg'),
+        'thumbnail': require('../meme-pictures/picture22.jpg'),
+        'alt': 'picture22',
     },
-    {
-        'id': '23',
-        'name': 'picture23.jpg',
-        'alt': 'picture23'
+{
+        'original': require('../meme-pictures/picture23.jpg'),
+        'thumbnail': require('../meme-pictures/picture23.jpg'),
+        'alt': 'picture23',
     },
-    {
-        'id': '24',
-        'name': 'picture24.jpg',
-        'alt': 'picture24'
+{
+        'original': require('../meme-pictures/picture24.jpg'),
+        'thumbnail': require('../meme-pictures/picture24.jpg'),
+        'alt': 'picture24',
     },
-    {
-        'id': '25',
-        'name': 'picture25.jpg',
-        'alt': 'picture25'
+{
+        'original': require('../meme-pictures/picture25.jpg'),
+        'thumbnail': require('../meme-pictures/picture25.jpg'),
+        'alt': 'picture25',
     },
-    {
-        'id': '26',
-        'name': 'picture26.jpg',
-        'alt': 'picture26'
+{
+        'original': require('../meme-pictures/picture26.jpg'),
+        'thumbnail': require('../meme-pictures/picture26.jpg'),
+        'alt': 'picture26',
     },
-    {
-        'id': '27',
-        'name': 'picture27.jpg',
-        'alt': 'picture27'
+{
+        'original': require('../meme-pictures/picture27.jpg'),
+        'thumbnail': require('../meme-pictures/picture27.jpg'),
+        'alt': 'picture27',
     },
-    {
-        'id': '28',
-        'name': 'picture28.jpg',
-        'alt': 'picture28'
+{
+        'original': require('../meme-pictures/picture28.jpg'),
+        'thumbnail': require('../meme-pictures/picture28.jpg'),
+        'alt': 'picture28',
     },
-    {
-        'id': '29',
-        'name': 'picture29.jpg',
-        'alt': 'picture29'
+{
+        'original': require('../meme-pictures/picture29.jpg'),
+        'thumbnail': require('../meme-pictures/picture29.jpg'),
+        'alt': 'picture29',
     },
-    {
-        'id': '30',
-        'name': 'picture30.jpg',
-        'alt': 'picture30'
+{
+        'original': require('../meme-pictures/picture30.jpg'),
+        'thumbnail': require('../meme-pictures/picture30.jpg'),
+        'alt': 'picture30',
     },
-    {
-        'id': '31',
-        'name': 'picture31.jpg',
-        'alt': 'picture31'
+{
+        'original': require('../meme-pictures/picture31.jpg'),
+        'thumbnail': require('../meme-pictures/picture31.jpg'),
+        'alt': 'picture31',
     },
-    {
-        'id': '32',
-        'name': 'picture32.jpg',
-        'alt': 'picture32'
+{
+        'original': require('../meme-pictures/picture32.jpg'),
+        'thumbnail': require('../meme-pictures/picture32.jpg'),
+        'alt': 'picture32',
     },
-    {
-        'id': '33',
-        'name': 'picture33.jpg',
-        'alt': 'picture33'
+{
+        'original': require('../meme-pictures/picture33.jpg'),
+        'thumbnail': require('../meme-pictures/picture33.jpg'),
+        'alt': 'picture33',
     },
-    {
-        'id': '34',
-        'name': 'picture34.jpg',
-        'alt': 'picture34'
+{
+        'original': require('../meme-pictures/picture34.jpg'),
+        'thumbnail': require('../meme-pictures/picture34.jpg'),
+        'alt': 'picture34',
     },
-    {
-        'id': '35',
-        'name': 'picture35.jpg',
-        'alt': 'picture35'
+{
+        'original': require('../meme-pictures/picture35.jpg'),
+        'thumbnail': require('../meme-pictures/picture35.jpg'),
+        'alt': 'picture35',
     },
-    {
-        'id': '36',
-        'name': 'picture36.jpg',
-        'alt': 'picture36'
+{
+        'original': require('../meme-pictures/picture36.jpg'),
+        'thumbnail': require('../meme-pictures/picture36.jpg'),
+        'alt': 'picture36',
     },
-    {
-        'id': '37',
-        'name': 'picture37.jpg',
-        'alt': 'picture37'
+{
+        'original': require('../meme-pictures/picture37.jpg'),
+        'thumbnail': require('../meme-pictures/picture37.jpg'),
+        'alt': 'picture37',
     },
-    {
-        'id': '38',
-        'name': 'picture38.jpg',
-        'alt': 'picture38'
+{
+        'original': require('../meme-pictures/picture38.jpg'),
+        'thumbnail': require('../meme-pictures/picture38.jpg'),
+        'alt': 'picture38',
     },
-    {
-        'id': '39',
-        'name': 'picture39.jpg',
-        'alt': 'picture39'
+{
+        'original': require('../meme-pictures/picture39.jpg'),
+        'thumbnail': require('../meme-pictures/picture39.jpg'),
+        'alt': 'picture39',
     },
-    {
-        'id': '40',
-        'name': 'picture40.jpg',
-        'alt': 'picture40'
+{
+        'original': require('../meme-pictures/picture40.jpg'),
+        'thumbnail': require('../meme-pictures/picture40.jpg'),
+        'alt': 'picture40',
     },
-    {
-        'id': '41',
-        'name': 'picture41.jpg',
-        'alt': 'picture41'
+{
+        'original': require('../meme-pictures/picture41.jpg'),
+        'thumbnail': require('../meme-pictures/picture41.jpg'),
+        'alt': 'picture41',
     },
-    {
-        'id': '43',
-        'name': 'picture43.jpg',
-        'alt': 'picture43'
+{
+        'original': require('../meme-pictures/picture42.jpg'),
+        'thumbnail': require('../meme-pictures/picture42.jpg'),
+        'alt': 'picture42',
     },
-    {
-        'id': '44',
-        'name': 'picture44.jpg',
-        'alt': 'picture44'
+{
+        'original': require('../meme-pictures/picture43.jpg'),
+        'thumbnail': require('../meme-pictures/picture43.jpg'),
+        'alt': 'picture43',
     },
-    {
-        'id': '45',
-        'name': 'picture45.jpg',
-        'alt': 'picture45'
+{
+        'original': require('../meme-pictures/picture44.jpg'),
+        'thumbnail': require('../meme-pictures/picture44.jpg'),
+        'alt': 'picture44',
     },
-    {
-        'id': '46',
-        'name': 'picture46.jpg',
-        'alt': 'picture46'
+{
+        'original': require('../meme-pictures/picture45.jpg'),
+        'thumbnail': require('../meme-pictures/picture45.jpg'),
+        'alt': 'picture45',
     },
-    {
-        'id': '47',
-        'name': 'picture47.jpg',
-        'alt': 'picture47'
+{
+        'original': require('../meme-pictures/picture46.jpg'),
+        'thumbnail': require('../meme-pictures/picture46.jpg'),
+        'alt': 'picture46',
     },
-    {
-        'id': '48',
-        'name': 'picture48.jpg',
-        'alt': 'picture48'
+{
+        'original': require('../meme-pictures/picture47.jpg'),
+        'thumbnail': require('../meme-pictures/picture47.jpg'),
+        'alt': 'picture47',
     },
-    {
-        'id': '49',
-        'name': 'picture49.jpg',
-        'alt': 'picture49'
+{
+        'original': require('../meme-pictures/picture48.jpg'),
+        'thumbnail': require('../meme-pictures/picture48.jpg'),
+        'alt': 'picture48',
     },
-    {
-        'id': '50',
-        'name': 'picture50.jpg',
-        'alt': 'picture50'
+{
+        'original': require('../meme-pictures/picture49.jpg'),
+        'thumbnail': require('../meme-pictures/picture49.jpg'),
+        'alt': 'picture49',
     },
-    {
-        'id': '51',
-        'name': 'picture51.jpg',
-        'alt': 'picture51'
+{
+        'original': require('../meme-pictures/picture50.jpg'),
+        'thumbnail': require('../meme-pictures/picture50.jpg'),
+        'alt': 'picture50',
     },
-    {
-        'id': '52',
-        'name': 'picture52.jpg',
-        'alt': 'picture52'
+{
+        'original': require('../meme-pictures/picture51.jpg'),
+        'thumbnail': require('../meme-pictures/picture51.jpg'),
+        'alt': 'picture51',
     },
-    {
-        'id': '53',
-        'name': 'picture53.jpg',
-        'alt': 'picture53'
+{
+        'original': require('../meme-pictures/picture52.jpg'),
+        'thumbnail': require('../meme-pictures/picture52.jpg'),
+        'alt': 'picture52',
     },
-    {
-        'id': '54',
-        'name': 'picture54.jpg',
-        'alt': 'picture54'
+{
+        'original': require('../meme-pictures/picture53.jpg'),
+        'thumbnail': require('../meme-pictures/picture53.jpg'),
+        'alt': 'picture53',
     },
-    {
-        'id': '55',
-        'name': 'picture55.jpg',
-        'alt': 'picture55'
+{
+        'original': require('../meme-pictures/picture54.jpg'),
+        'thumbnail': require('../meme-pictures/picture54.jpg'),
+        'alt': 'picture54',
     },
-    {
-        'id': '56',
-        'name': 'picture56.jpg',
-        'alt': 'picture56'
+{
+        'original': require('../meme-pictures/picture55.jpg'),
+        'thumbnail': require('../meme-pictures/picture55.jpg'),
+        'alt': 'picture55',
     },
-    {
-        'id': '57',
-        'name': 'picture57.jpg',
-        'alt': 'picture57'
+{
+        'original': require('../meme-pictures/picture56.jpg'),
+        'thumbnail': require('../meme-pictures/picture56.jpg'),
+        'alt': 'picture56',
+    },
+{
+        'original': require('../meme-pictures/picture57.jpg'),
+        'thumbnail': require('../meme-pictures/picture57.jpg'),
+        'alt': 'picture57',
+    },
+{
+        'original': require('../meme-pictures/picture58.jpg'),
+        'thumbnail': require('../meme-pictures/picture58.jpg'),
+        'alt': 'picture58',
+    },
+{
+        'original': require('../meme-pictures/picture59.jpg'),
+        'thumbnail': require('../meme-pictures/picture59.jpg'),
+        'alt': 'picture59',
+    },
+{
+        'original': require('../meme-pictures/picture60.jpg'),
+        'thumbnail': require('../meme-pictures/picture60.jpg'),
+        'alt': 'picture60',
     },
 ];
 
 export default arr;
 
 
-// for (var i = 1; i <= 30; i++) {
+// for (var i = 1; i <= 60; i++) {
 //     console.log(`{
-//         'id':'${i}',
-//         'name':'picture${i}.jpg',
-//         'alt': 'picture${i}'
+//         'original': require('../meme-pictures/picture${i}.jpg'),
+//         'thumbnail': require('../meme-pictures/picture${i}.jpg'),
+//         'alt': 'picture${i}',
 //     },`)
 // }

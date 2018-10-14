@@ -7,12 +7,14 @@ class TextPicture extends Component {
         return (
             <div className="pictureContainer">
                 <div className="topText" 
-                     style={{fontSize: this.props.fontSize + 'px',  
-                             "color": this.props.color}}>
-                    {this.props.topText}
+                     style={
+                         {fontSize: this.props.fontSize + 'px',  
+                         "color": this.props.color}}>
+                         {this.props.topText}
                 </div>
                 <img src={require(`../meme-pictures/${this.props.value}`)} 
-                     className="memePictures"/>
+                     className="memePictures" 
+                     alt={this.props.value.match(/\d+/)[0]}/>
                 <div className="bottomText" 
                      style={{fontSize: this.props.fontSize + 'px', 
                      "color": this.props.color}}>

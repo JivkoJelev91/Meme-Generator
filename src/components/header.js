@@ -7,7 +7,9 @@ class Header extends Component {
     return (
       <div>
           <header>Meme Generator</header>
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} 
+               className="App-logo" 
+               alt="logo" />
       </div>
     );
   }

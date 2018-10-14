@@ -15,8 +15,11 @@
 }
 
 .wrapper{
-  display:flex;
   justify-content: center;
+}
+
+.flexDiv{
+  display:flex;
   flex-wrap: wrap;
 }
 
@@ -25,7 +28,7 @@ header{
   padding: 50px;
 }
 
-button{
+.btn{
   width: 100%;
   background-color: #4CAF50;
   color: white;
@@ -36,8 +39,15 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+.btn:hover{
   background-color: #45a049;
+}
+
+.gal{
+  width:55%;
+  margin: 0 auto;
+  padding-bottom:50px;
+  justify-content: center;
 }
 
 input[type=text],input[type=number], select{
@@ -54,17 +64,16 @@ input[type=text],input[type=number], select{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px 30px;
-  margin:20px;
+  margin:20px auto;
+  width:40%;
 }
 
 .pictureContainer{
   position: relative;
-  max-width: 690px;
-  height: 500px;
+  max-width: 600px;
   width:100%;
-  width: 100%;
   font-size:33px;
-  margin:20px;
+  margin:20px auto;
 }
 
 .ThumbWrapper img {
@@ -87,10 +96,16 @@ input[type=text],input[type=number], select{
   .form{
     padding-left: 20%;
     padding-right: 20%;
+    width:50%;
   }
   .pictureContainer{
     height: 300px;
     font-size:23px;
+    margin:20px;
+  }
+  .gal{
+    width:90%;
+    padding-bottom:30px;
   }
 }
 
