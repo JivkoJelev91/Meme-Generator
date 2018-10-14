@@ -43,7 +43,7 @@ header{
   background-color: #45a049;
 }
 
-.gal{
+.gallery{
   width:55%;
   margin: 0 auto;
   padding-bottom:50px;
@@ -103,7 +103,7 @@ input[type=text],input[type=number], select{
     font-size:23px;
     margin:20px;
   }
-  .gal{
+  .gallery{
     width:90%;
     padding-bottom:30px;
   }
