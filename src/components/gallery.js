@@ -7,8 +7,11 @@ import "react-image-gallery/styles/css/image-gallery.css";
 class Gallery extends React.Component {
     render() {
       return (
-          <div className="gallery" >
-            <ImageGallery items={arr} 
+          <div className="gallery">
+            <ImageGallery 
+              items={arr} 
+              showIndex={true}
+              showFullscreenButton={false}
               onClick={this.props.setImage}
               onMouseOver={this.props.setImage}/>
           </div>
