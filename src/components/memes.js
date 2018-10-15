@@ -49,7 +49,9 @@ class Memes extends Component {
                 active: false
             });
         }
-        if(!event.target.value || event.target.value > 99){
+        if(!event.target.value || 
+            event.target.value > 99 ||
+            typeof event.target.value != Number){
             this.setState({
                 fontSize: 33
             });
