@@ -13,7 +13,7 @@ class Memes extends Component {
           value: 'picture1.jpg',
           topText: "",
           bottomText: "",
-          fontSize: 33, 
+          fontSize: 23, 
           pages: 15,
           active : false,
           color:"white"
@@ -47,13 +47,6 @@ class Memes extends Component {
             this.setState({
                 fontSize: event.target.value,
                 active: false
-            });
-        }
-        if(!event.target.value || 
-            event.target.value > 99 ||
-            typeof event.target.value != Number){
-            this.setState({
-                fontSize: 33
             });
         }
     }
