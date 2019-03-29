@@ -5,12 +5,14 @@
   "private": true,
   "homepage": "https://jivkojelev91.github.io/Meme-Generator/",
   "dependencies": {
+    "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "html2canvas": "^1.0.0-alpha.12",
     "rc-color-picker": "^1.2.6",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-image-gallery": "^0.8.12",
+    "react-images-upload": "^1.2.6",
     "react-scripts": "2.0.4"
   },
   "scripts": {
