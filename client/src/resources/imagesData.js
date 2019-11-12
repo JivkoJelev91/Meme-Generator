@@ -299,6 +299,11 @@ var arr = [
         'thumbnail': require('../meme-pictures/picture60.jpg'),
         'alt': 'picture60',
     },
+    {
+        'original': require('../meme-pictures/picture61.jpg'),
+        'thumbnail': require('../meme-pictures/picture61.jpg'),
+        'alt': 'picture61',
+    },
 ];
 
 export default arr;
