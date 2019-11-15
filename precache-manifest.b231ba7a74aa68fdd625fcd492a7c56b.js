@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/Meme-Generator/static/media/picture30.859248a9.jpg"
   },
   {
-    "revision": "95ccdc106c2c41ff0ea7",
-    "url": "/Meme-Generator/static/css/main.982da0ff.chunk.css"
+    "revision": "48410140a4fc4dadd0b6",
+    "url": "/Meme-Generator/static/css/main.78027608.chunk.css"
   },
   {
-    "revision": "191c96c28015f43db0ee1b7986e41dc1",
-    "url": "/Meme-Generator/static/media/picture61.191c96c2.jpg"
+    "revision": "f29f622d0cc6536014ea6fbc5ef36bf3",
+    "url": "/Meme-Generator/static/media/logo.f29f622d.png"
   },
   {
-    "revision": "d4d871e5fce827fbae5b",
-    "url": "/Meme-Generator/static/js/1.d4d871e5.chunk.js"
+    "revision": "26296e3999bb2737c069",
+    "url": "/Meme-Generator/static/js/1.26296e39.chunk.js"
   },
   {
     "revision": "1745a5190e70ee1e962f",
@@ -136,8 +136,8 @@ self.__precacheManifest = [
     "url": "/Meme-Generator/static/media/picture29.c9cb1d60.jpg"
   },
   {
-    "revision": "95ccdc106c2c41ff0ea7",
-    "url": "/Meme-Generator/static/js/main.95ccdc10.chunk.js"
+    "revision": "48410140a4fc4dadd0b6",
+    "url": "/Meme-Generator/static/js/main.48410140.chunk.js"
   },
   {
     "revision": "f8fe7eb1b6d3bbbc0eb25437b87ceeea",
@@ -260,15 +260,15 @@ self.__precacheManifest = [
     "url": "/Meme-Generator/static/media/picture60.0036a0ab.jpg"
   },
   {
-    "revision": "f29f622d0cc6536014ea6fbc5ef36bf3",
-    "url": "/Meme-Generator/static/media/logo.f29f622d.png"
+    "revision": "4e0127d971dac9cd144a1d119b0dec79",
+    "url": "/Meme-Generator/static/media/picture61.4e0127d9.jpg"
   },
   {
-    "revision": "d4d871e5fce827fbae5b",
-    "url": "/Meme-Generator/static/css/1.9e5a52b7.chunk.css"
+    "revision": "26296e3999bb2737c069",
+    "url": "/Meme-Generator/static/css/1.0a21053d.chunk.css"
   },
   {
-    "revision": "646b4db9b1d51c8abbfc14029f8d8b92",
+    "revision": "4c3f9acb489f3184c7713bcf8815fd49",
     "url": "/Meme-Generator/index.html"
   }
 ];
