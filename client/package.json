@@ -5,7 +5,7 @@
   "private": true,
   "homepage": "https://jivkojelev91.github.io/Meme-Generator/",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "gh-pages": "^2.0.1",
     "html2canvas": "^1.0.0-alpha.12",
     "rc-color-picker": "^1.2.6",
